@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+} 
+.wrapper {
+    width: 97.7%; 
+    /* 1408px */
+    margin: 0 auto;
+}
+/* Белый шрифт */
+.header-menu-right-contant-social, .header-menu-right-contant-lang {
+    color: #fff;
+}
+
+/* Баннер */
+.ads-block {
+    background-color: #93FF82;
+}
+.ads-block-up {
+    width: 100%;
+    height: 323px;
+    border-radius: 20px;
+}
+
+/* header */
+.header-menu {
+    background-color: #000;
+    display: flex;
+}
+.header-menu-left {
+    width: 13.77%;
+}
+.header-menu-left-logo {
+    display: flex;
+    justify-content: space-between;
+}
+.header-menu-left-logo-letter {
+    width: 2.16%;
+}
+.header-menu-right {
+    display: flex;
+}
+.header-menu-right-search {
+    padding: 12px 0;
+}
+.header-menu-right-search input {
+    background-color: #302C2C;
+    width: 580px;
+    height: 48px;
+    border-radius: 10px;
+    background-image: url(../images/header/search.png);
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+.header-menu-right-contant 
