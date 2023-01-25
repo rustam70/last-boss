@@ -3,9 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+    font-size: 1em;
+    text-decoration: none;
+}
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
 }
 .container {
     width: 1440px;
@@ -17,9 +24,56 @@ body {
     /* 1408px */
     margin: 0 auto;
 }
-/* Белый шрифт */
-.header-menu-right-contant-social, .header-menu-right-contant-lang {
-    color: #fff;
+/* Шрифты */
+
+
+.header-content-news-title, .header-content-news-content-date {
+    font-weight: 700;
+}
+.header-content-stories-title h6, .header-content-main-title {
+    font-weight: 800;
+}
+.header-content-stories-interview-block-text-tag, .header-content-news-content-text {
+    font-weight: 500;
+}
+{
+    font-weight: 600;
+}
+
+.header-read-block, .header-read-block-black {
+    font-size: 20px;
+}
+.header-content-main-title {
+    font-size: 36px;
+}
+.header-content-news-title {
+    font-size: 16px;
+}
+{
+    font-size: 48px;
+}
+.header-content-stories-interview-block-text-tag {
+    font-size: 14px;
+}
+{
+    font-size: 24px;
+}
+{
+    font-size: 42px;
+}
+.header-content-stories-interview-block-text-tag {
+    font-size: 10px;
+}
+
+
+.header-content-news-content-date {
+    color: #777777;
+}
+.header-read-block {
+    color: #808080;
+}
+.header-content-stories-title h6, .header-content-stories-interview-block-text-tag, .header-content-stories-interview-block-text-content, .header-content-main-title, .header-content-news-title, .header-content-news-content-text {
+    color: #000000;
 }
 
 /* Баннер */
@@ -29,16 +83,38 @@ body {
 .ads-block-up {
     width: 100%;
     height: 323px;
-    border-radius: 20px;
 }
 
+/* border radius */
+.ads-block, .header-menu, .header-content-stories, .header-content-main, .header-content-news, .header-content-stories-image, .header-content-main-img, .header-content-stories-interview-block-img {
+    border-radius: 10px;
+}
+.header-read-block, .header-read-block-black {
+    border-radius: 8px;
+}
+.header-content-stories-interview-block-text-tag {
+    border-radius: 6px;
+}
+
+/* Троеточие */
+.header-content-main-title, .header-content-news-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
 /* header */
 .header-menu {
     background-color: #000;
     display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 24px;
 }
 .header-menu-left {
-    width: 13.77%;
+    /* width: 13.77%; */
 }
 .header-menu-left-logo {
     display: flex;
@@ -49,17 +125,177 @@ body {
 }
 .header-menu-right {
     display: flex;
+    gap: 0 64px;
 }
 .header-menu-right-search {
-    padding: 12px 0;
+    display: flex;
+    gap: 0 37px;
+}
+.header-menu-right-content {
+    display: flex;
+    gap: 0 12px;
+    align-items: center;
+}
+.header-menu-right-content-image {
+    width: 8px;
+    height: 4px;
+}
+.night_theme, .header-menu-right-content-setting {
+    display: none;
 }
 .header-menu-right-search input {
     background-color: #302C2C;
     width: 580px;
     height: 48px;
+    border: none;
+    outline: 0;
     border-radius: 10px;
     background-image: url(../images/header/search.png);
     background-repeat: no-repeat;
     background-position: 95%;
 }
-.header-menu-right-contant 
+
+.header-read {
+    margin: 0.8889rem 0 1.7778rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-read-tags {
+    display: flex;
+    gap: 0 16px;
+}
+.header-read-block {
+    padding: 12px 20px;
+    border: 2px solid #808080;
+}
+.header-read-block-black {
+    padding: 12px 20px;
+    background-color: #000;   
+}
+
+.header-content {
+    display: flex;
+    gap: 0 16px;
+}
+.header-content-stories {
+    padding: 12px;
+}
+.header-content-main {
+    padding: 16px;
+}
+.header-content-news {
+    padding: 12px;
+}
+.header-content-stories, .header-content-main, .header-content-news {
+    background-color: #ffffff;
+}
+.header-content-stories, .header-content-news {
+    width: 22.72%;
+}
+.header-content-stories-image {
+    background-color: #E3E3E3;
+    width: 296px;
+    height: 182px;
+}
+.header-content-stories-title {
+    margin: 4px 0 12px 0;
+    padding-left: 4px;
+}
+.header-content-stories-interview {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.header-content-stories-interview-block {
+    padding-left: 4px;
+    display: flex;
+    gap: 0 12px;
+}
+.header-content-stories-interview-block-img {
+    width: 130px;
+    height: 72px;
+    background-color: #E3E3E3;
+}
+.header-content-stories-interview-block-text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header-content-stories-interview-block-text-tag {
+    border: 1px solid #000000;
+    background-color: #93FF82;
+    padding: 6px 10px;
+    height: 24px;
+    display: block;
+}
+
+
+.header-content-main-title {
+    width: 704px;
+    margin-top: 16px;
+}
+.header-content-main-img {
+    background-color: #9C9CFF;
+    width: 704px;
+    height: 364px;
+}
+
+.header-content-news-line {
+    margin: 12px 0;
+    border: 1px solid #E3E3E3;
+}
+.header-content-news {
+    height: 500px;
+    overflow: auto;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    .ads-block-up {
+        height: 172px;
+    }
+    .header-menu {
+        padding: 14px 12px 14px 16px;
+        margin-top: 1.5rem;
+    }
+    .header-menu-left {
+        /* width: 25%; */
+    }
+    .header-menu-right {
+        gap: 0 16px;
+    }
+    .header-menu-right-search {
+        gap: 0;
+    }
+    .header-menu-right-search input {
+        width: 286px;
+    }
+    .header-menu-right-content-image, .header-menu-right-content-text {
+        display: none;
+    }
+    .header-menu-right-content-setting, .night_theme {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        width: 375px;
+    }
+    .ads-block-up {
+        height: 84px;
+    }
+    .header-menu {
+        margin-top: 8px;
+        justify-content: space-around;
+    }
+    .header-menu-right {
+        display: none;
+    }
+}
