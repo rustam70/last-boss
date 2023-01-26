@@ -153,7 +153,9 @@ body {
 .night_theme, .header-menu-right-content-setting, .header-content-stories-title-tablet, 
 .header-content-stories-interview-block-text-content-tablet, .header-content-main-mobile, .header-content-stories-title-mobile, 
 .news-tab, .header-date-and-time, .block-news-img-tablet, .horizontal-subtitle-tablet, .ticket-content-titul-header-tablet, 
-.ticket-content-description-tablet, .test-btn-mob, .distribution-title-logo-tablet, .distribution-title-logo-mobile {
+.ticket-content-description-tablet, .test-btn-mob, .distribution-title-logo-tablet, .distribution-title-logo-mobile, 
+.information-small-logos-tablet, .insta-tablet, .facebook-tablet, .youtube-tablet, .telega-tablet, .vk-tablet, .big-logo-tablet, 
+.information-small-logos-mobile, .final-logo, .mobile-menu {
     display: none;
 }
 /* header */
@@ -189,7 +191,6 @@ body {
     width: 8px;
     height: 4px;
 }
-
 .header-menu-right-search input {
     background-color: #302C2C;
     width: 580px;
@@ -201,7 +202,6 @@ body {
     background-repeat: no-repeat;
     background-position: 95%;
 }
-
 .header-read {
     margin: 0.8889rem 0 1.7778rem 0;
     display: flex;
@@ -222,7 +222,6 @@ body {
     background-color: #000;   
     white-space: nowrap;
 }
-
 .header-content {
     display: flex;
     gap: 0 1rem;
@@ -245,7 +244,6 @@ body {
     margin: 4px 0 .75rem 0;
     padding-left: 4px;
 }
-
 .header-content-stories-interview {
     display: flex;
     flex-direction: column;
@@ -274,11 +272,9 @@ body {
     height: 24px;
     display: block;
 }
-
 .header-content-main-title {
     margin-top: 1rem;
 }
-
 .header-content-main-img {
     background-color: #9C9CFF;
     min-width: 704px;
@@ -302,7 +298,6 @@ body {
 .watch {
     padding-left: 10px;
 }
-
 .block-news {
     margin-top: 2rem;
 }
@@ -354,8 +349,6 @@ body {
 .horizontal-img-order {
     order: 2;
 }
-
-
 .block-tickets-left, .block-tickets-right {
     display: flex;
     margin-top: 1.5rem;
@@ -381,7 +374,6 @@ body {
     -webkit-line-clamp: 3;
     padding-top: 35px;
 }  
-
 .tests {
     margin-bottom: 2rem;
 }
@@ -414,8 +406,6 @@ body {
 .block-news-horizontal-bot {
     margin-bottom: 0;
 }
-
-
 .distribution-title {
     background-color: #FFC7F3;
     text-align: center;
@@ -459,7 +449,6 @@ body {
 .information-down-social {
     background-color: #ffffff;
 }
-
 .information-up {
     margin: 1rem 0;
     display: flex;
@@ -472,7 +461,6 @@ body {
 .information-small-text {
     padding-top: 140px;
 }
-
 .information-big {
     display: flex;
     width: 932px;
@@ -494,7 +482,6 @@ body {
     outline: 0;
     padding: 13px 0 15px;
 }
-
 .information-down {
     display: flex;
     gap: 0 1rem;
@@ -552,6 +539,10 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.information-down-tablet-row {
+    display: flex;
+    gap: 0 1rem;
+}
 @media only screen and (max-width: 768px) {
     .container {
         width: 768px;
@@ -561,14 +552,16 @@ body {
     .header-content-stories-title-full, .header-content-stories-interview-block-text-content-full, 
     .news-full, .news-date-full, .header-content-stories-title-mobile, .block-news-img, .block-news-title, 
     .block-news-subtitle, .banner-right, .block-news-horizontal-bot, .ads-block-mid, .ticket-content-titul-header, 
-    .ticket-content-description, .test-btn, .distribution-title-logo {
+    .ticket-content-description, .test-btn, .distribution-title-logo, .information-small-logos, .insta,
+    .facebook, .youtube, .telega, .vk, .big-logo {
         display: none;
     }
     /* DS-block */
     .header-menu-right-content-setting, .night_theme, .header-content-stories-title-tablet, 
     .header-content-stories-interview-block-text-content-tablet, .news-tab, .horizontal-img, .news-titul-table, 
     .block-news-img-tablet, .horizontal-subtitle-tablet, .ticket-content-titul-header-tablet, .ticket-content-description-tablet, .ticket-content, 
-    .ticket-content, .distribution-title-logo-tablet {
+    .ticket-content, .distribution-title-logo-tablet, .information-small-logos-tablet, .insta-tablet, .facebook-tablet, 
+    .youtube-tablet, .telega-tablet, .vk-tablet {
         display: block;
     }
     .ads-block-up {
@@ -727,6 +720,95 @@ body {
         font-weight: 600;
         padding: 0;
     }
+    .information-up {
+        flex-direction: column;
+    }
+    .information-small {
+        background-color: #ffffff;
+        width: 100%;
+    }
+    .information-small-text {
+        padding-top: 472px;
+    }
+    .information-small-title {
+        color: #000000;
+        font-size: 48px;
+    }
+    .information-big {
+        flex-direction: column;
+        padding: 1.5rem;
+        width: 100%;
+    }
+    .information-big, .information-big-left {
+        gap: 35px;
+    }
+    .information-big-right {
+        text-align: left;
+        gap: 24px;
+    }
+    .information-big-btn {
+        background-color: #FF4308;
+        font-size: 36px;
+        color: #ffffff;
+        order: 2;
+    }
+    .nformation-big-title-down {
+        order: 1;
+        margin-top: 35px;
+    }
+    .information-big-title-up, .information-big-title-down, .information-big-title-down {
+        font-size: 48px;
+        font-weight: 600;
+    }
+    .information-down-big {
+        flex-direction: column;
+        gap: 50px;
+        padding: 1.5rem;
+    }
+    .information-down-big-left {
+        padding-right: 0;
+    }
+    .information-down-big-right {
+        text-align: center;
+    }
+    .information-down {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .information-down-big-btn {
+        font-size: 48px;
+        font-weight: 600;
+        padding: 30.5px 88.5px;
+    }
+    .information-down-tablet-row {
+        margin-top: 1rem;
+    }
+    .information-down-btn {
+        padding: 30px 62px;
+    }
+    .information-down-btn p{
+        font-size: 36px;
+        font-weight: 800;
+        white-space: inherit;
+    }
+    .insta-tablet {
+        padding-left: 92.6px;
+        padding-top: 50px;
+    }
+    .facebook-tablet {
+        padding: 144px 0 112.3px 100.5px;
+    }
+    .youtube-tablet {
+        padding-left: 188px;
+    }
+    .telega-tablet {
+        padding: 130px 70px 158px;
+    }
+    .big-logo-tablet {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+    }
 }
 
 
@@ -740,11 +822,14 @@ body {
     }
     /* DS-none */
     .header-menu-right, .header-read, .header-content-main-title-full, .header-content-stories-title-tablet, 
-    .header-content-stories-interview-block-text-content-tablet, .horizontal-news-full, .distribution-title-logo-tablet {
+    .header-content-stories-interview-block-text-content-tablet, .horizontal-news-full, .distribution-title-logo-tablet, 
+    .information-small-logos-tablet, .insta-tablet, .facebook-tablet, .youtube-tablet, .telega-tablet, .vk-tablet, 
+    .big-logo-tablet {
         display: none;
     }
     .header-content-main-mobile, .header-content-stories-title-mobile, .header-content-stories-interview-block-text-content-full, 
-    .test-btn-mob, .distribution-title-logo-mobile {
+    .test-btn-mob, .distribution-title-logo-mobile, .information-small-logos-mobile, .insta, .facebook, .youtube, 
+    .telega, .vk {
         display: block;
     }
     .header-date-and-time {
@@ -834,5 +919,69 @@ body {
     }
     .distribution-btn {
         height: 56px;
+    }
+    .information-up {
+        gap: .5rem;
+    }
+    .information-small {
+        padding: .75rem;
+    }
+    .information-small-text {
+        padding-top: 195px;
+    }
+    .information-small-title, .information-down-big-title, .information-down-big-btn {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .information-big, .information-down-big {
+        padding: .75rem;
+    }
+    .information-big-title-up, .information-big-title-down, .information-big-title-down {
+        font-size: 25px;
+        font-weight: 800;
+    }
+    .information-big, .information-big-left, .information-big-right {
+        gap: 1rem;
+    }
+    .information-big-btn {
+        font-size: 25px;
+        font-weight: 600;
+        padding: 15.5px 116px;
+    }
+    .information-down-big-btn {
+        padding: 15.5px 38.5px;
+    }
+    .information-down-tablet-row {
+        gap: .5rem;
+        margin-top: .5rem;
+    }
+    .information-down-btn {
+        padding: 11px 30px;
+    }
+    .information-down-btn p {
+        font-size: 18px;
+    }
+    .final-logo {
+        display: flex;
+        justify-content: space-between;
+        margin: .5rem 0;
+    }
+    .mobile-menu {
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        bottom: 0;
+        background-color: #000000;
+        width: 100%;
+        padding: 10px;
+    }
+    .trends, .home, .search, .setting {
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .home, .search, .setting, .trends {
+        color: #777777;
     }
 }
